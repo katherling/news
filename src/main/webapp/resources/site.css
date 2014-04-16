@@ -1,0 +1,23 @@
+#content div.select2-container 
+{
+	width: 250px;
+}
+
+#content div.form-group div.select2-container 
+{
+	width: 100%;
+}
+
+#content div.form-group div.select2-container .select2-choices
+{
+	height: 34px !important;
+}
+
+.newsItem div {
+	padding-top: 20px;
+}
+
+.newsItem div.text-muted,
+div.bodyContainer {
+	padding-top: 0;
+}

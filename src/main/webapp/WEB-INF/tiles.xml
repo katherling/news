@@ -1,0 +1,22 @@
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/pages/layout.jsp">
+		<put-attribute name="title" value="News" />
+		<put-attribute name="language-select" value="/WEB-INF/pages/language.jsp" />
+		<put-attribute name="login" value="/WEB-INF/pages/login.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+	<definition name="index" extends="baseLayout">
+		<put-attribute name="title" value="News List - News" />
+		<put-attribute name="body" value="/WEB-INF/pages/news/index.jsp" />
+	</definition>
+	<definition name="edit" extends="baseLayout">
+		<put-attribute name="title" value="Edit News" />
+		<put-attribute name="body" value="/WEB-INF/pages/edit.jsp" />
+	</definition>
+	
+	
+</tiles-definitions>
